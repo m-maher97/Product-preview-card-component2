@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <title>Frontend Mentor | Product preview card component</title>  
+    <style>
+        .attribution { 
+          font-size: 11px; text-align: center; 
+          padding-top: 20px;
+        }
+        .attribution a { color: hsl(228, 45%, 44%); }
+        body{
+          background-color: #F3EAE3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          flex-direction: column;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          
+        }
+        .product-card{
+          display: flex;
+          border-radius: 5px;
+          background-color:#fff;
+          max-width: 700px;
+          flex-direction: row;
+          overflow: hidden;
+        }
+        .product-card h6{
+          letter-spacing: 2px;
+          font-weight: 400;
+        }
+        .product-card img{
+          width: 50%;
+          object-fit: cover;
+        }
+        .right{
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+        }
+        .right p{
+          font-size: 16px;
+          margin-bottom: 20px;
+          font-weight: 400;
+    
+        }
+        .price{
+          display: flex;
+          gap: 25px;
+          flex-direction: row;
+          align-items: center;
+    
+        }
+        .new{
+          font-size: 32px;
+          color: darkgreen;
+        }
+        .old{
+          font-size: 12px;
+          font-weight: lighter;
+          text-decoration: line-through;
+    
+        }
+        .cart {
+          margin-top: 20px;
+          text-align: center;
+        }
+        .cart a {
+      display: flex;
+      text-decoration: none;
+      background-color: #1A4031; 
+      color: white; 
+      padding: 15px 50px; 
+      border-radius: 10px; 
+      font-weight: bold; 
+      font-size: 14px;
+      transition: background-color 0.3s ease; 
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    .cart a:hover {
+      background-color: #3D6E58; 
+    }
+    .cart img{
+      width: 18px;
+      height: 18px;
+      padding: 0 3px;
+      
+    }
+    
+      </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="/image-product-desktop.jpg" alt="">
+      <div class="right">
+        <h6>Perfume</h6>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+            <div class="new">
+                  <h3>$149.99</h3>
+                </div>
+                <div class="old">            
+                  <h3>$169.99</h3>
+                </div>
+        </div>
+        <div class="cart">
+          <a  href=""> <img src="/icon-cart.svg" alt="cart" width="10" height="10">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href=""> Maher</a>.
+      </div>
+</body>
+</html>
